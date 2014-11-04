@@ -64,6 +64,8 @@ if ( typeof define === 'function' && define.amd ) {
       'outlayer/outlayer'
     ],
     itemDefinition );
+} else if ( typeof exports === 'object' ) { 
+  module.exports = itemDefinition( require('outlayer') );
 } else {
   // browser global
   window.Isotope = window.Isotope || {};

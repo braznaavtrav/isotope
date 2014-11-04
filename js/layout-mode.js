@@ -143,6 +143,11 @@ if ( typeof define === 'function' && define.amd ) {
       'outlayer/outlayer'
     ],
     layoutModeDefinition );
+} else if ( typeof exports === 'object' ) { 
+  module.exports = layoutModeDefinition( 
+    require('get-size'),
+    require('outlayer')
+  );
 } else {
   // browser global
   window.Isotope = window.Isotope || {};

@@ -11,5 +11,11 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/metafizzy/isotope.git"
+  },
+  "dependencies": {
+    "get-size": "git://github.com/desandro/get-size",
+    "masonry": "git://github.com/braznaavtrav/masonry",
+    "matches-selector": "git://github.com/desandro/matches-selector",
+    "outlayer": "git://github.com/braznaavtrav/outlayer"
   }
 }

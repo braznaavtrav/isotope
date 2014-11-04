@@ -35,6 +35,8 @@ if ( typeof define === 'function' && define.amd ) {
       '../layout-mode'
     ],
     verticalDefinition );
+} else if ( typeof exports === 'object' ) { 
+  module.exports = verticalDefinition( require('../layout-mode') );
 } else {
   // browser global
   verticalDefinition(

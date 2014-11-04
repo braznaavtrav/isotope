@@ -49,6 +49,8 @@ if ( typeof define === 'function' && define.amd ) {
       '../layout-mode'
     ],
     fitRowsDefinition );
+} else if ( typeof exports === 'object' ) { 
+  module.exports = fitRowsDefinition( require('../layout-mode') );
 } else {
   // browser global
   fitRowsDefinition(
